@@ -3,7 +3,7 @@ name: Hugo Lugo
 neptun: ADFUXK
 id: 2026_SD_2
 ---
-# Simulation of Warehouse Robot Coordination
+# Board-game rules companion with source references
 
 ## My interpretation of the brief
 The project is about building a mobile-friendly web application that helps players resolve situations during a board game by retrieving the relevant rules and showing exactly where the answer comes from. The user picks a game and a rules version, asks a situational question, and the system answers using retrieved excerpts from the rulebook rather than from the model's own knowledge. Every statement must be supported by a precise source reference, and opening that reference must show the original context. The system has to handle editions and optional expansions, ask for missing situational details when the question is incomplete, and say clearly when the sources are not enough to answer. House rules must be labelled, users must be able to save questions and notes, and incorrect answers must be flaggable. A full game engine or automated rule adjudication is outside scope.
