@@ -1,0 +1,32 @@
+---
+name: Hugo Lugo
+neptun: ADFUXK
+id: 2026_SD_2
+---
+# Simulation of Warehouse Robot Coordination
+
+## My interpretation of the brief
+The project is about building a mobile-friendly web application that helps players resolve situations during a board game by retrieving the relevant rules and showing exactly where the answer comes from. The user picks a game and a rules version, asks a situational question, and the system answers using retrieved excerpts from the rulebook rather than from the model's own knowledge. Every statement must be supported by a precise source reference, and opening that reference must show the original context. The system has to handle editions and optional expansions, ask for missing situational details when the question is incomplete, and say clearly when the sources are not enough to answer. House rules must be labelled, users must be able to save questions and notes, and incorrect answers must be flaggable. A full game engine or automated rule adjudication is outside scope.
+
+## Why I am a good fit for this project
+I am interested in making information easier to find and trust, and board game rulebooks are a good example of a domain where answers are spread across many sections and editions. I like that this project is not just about generating text it is about retrieval, citations, and being honest when the system does not know. I want to understand how keyword and semantic search can be combined, how documents should be split so that answers stay accurate, and how to evaluate whether a citation actually supports a claim rather than just existing. I also enjoy building interfaces, and a mobile-friendly tool that people could realistically use during a game night is motivating to me.
+
+## Relevant experience and background
+Through my coursework I have built a foundation in programming, data handling, and web development. I have worked with data transformation concepts such as filtering, mapping, and joining, and I am comfortable reasoning about structured data and how to store and retrieve it. I understand the basics of search and retrieval, including how text can be indexed and how similarity between a question and a document can be estimated. I also have some experience with web interfaces and with using APIs. Above all, I am motivated to learn the parts I do not yet know, including document chunking, hybrid retrieval, reranking, and how to design a small evaluation set that measures retrieval and citation quality honestly.
+
+## Proposed approach
+I would start by thinking about what the user actually needs: they are in the middle of a game, something is unclear, and they want a short answer they can trust, with a way to check it themselves. So the experience I'm aiming for is quick and grounded — ask a question, get an answer with references, open the reference and see the original text.
+
+From there, I'd focus on the parts that are hardest to get right: how rulebooks are split into sections with stable identifiers, how editions and expansions are kept separate, and how the system decides which excerpts are actually relevant. I don't have all the answers yet, and that's fine — figuring out how to combine keyword and semantic search, how to follow cross-references between sections, and how to measure whether an answer is supported by its sources is part of the work. I'd start with a small set of rulebooks and a simple pipeline, test it on real questions, and let the design improve from what I learn.
+
+The core questions I need to answer first are about the model: what a warehouse looks like, how robots and tasks are represented, and what "time" means in the simulation. From there, the hard part is coordination how robots plan routes, how conflicts are detected when two robots want the same space, and how those conflicts get resolved. I don't have all the answers yet, and that's fine. What matters is that the first strategy is simple enough to build and measure, so a second strategy can be compared against it fairly using the same metrics and scenarios.
+
+## Initial plan
+1. Choose a few games and rulebooks, and check their usage conditions.
+2. Define how documents are split into sections with stable identifiers, editions, and expansions.
+3. Build a first retrieval pipeline using keyword search and simple excerpts.
+4. Add semantic retrieval and combine the two, with a reranking step.
+5. Handle cross-references between sections and enforce edition-bound applicability.
+6. Generate answers from retrieved excerpts with citations, and handle unanswerable questions.
+7. Build the mobile-friendly interface with question saving, notes, and answer flagging.
+8. Create a small manually checked evaluation set and measure retrieval, citation, and abstention quality.
