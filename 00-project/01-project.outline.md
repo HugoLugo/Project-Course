@@ -1,9 +1,9 @@
 ---
-name: [Hugo Alberto Lugo Esperilla]
-neptun: [ADFUXK]
-id: [2026-LG-02]
-github: [https://github.com/HugoLugo/Project-Course]
-github_project: [https://github.com/HugoLugo/Project-Course/tree/main/00-project]
+name: Hugo Alberto Lugo Esperilla
+neptun: ADFUXK
+id: 2026-LG-02
+github: https://github.com/HugoLugo/Project-Course
+github_project: https://github.com/HugoLugo/Project-Course/tree/main/00-project
 ---
 
 # Visual ETL Application
