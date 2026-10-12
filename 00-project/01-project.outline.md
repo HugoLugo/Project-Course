@@ -16,6 +16,7 @@ The Visual ETL Application is a node-based data preparation tool designed for us
 - **Measurable success criteria:** A user can load a supported data source, create and run a valid workflow containing transformations, preview intermediate results, handle understandable warnings or errors, and export the final result. Representative workflows should process datasets of at least 50,000 rows without crashing under normal test conditions.
 - **Constraints:** Strict TypeScript; directed acyclic workflow graphs; local-first processing for local files; CSV, JSON, XML, and JSON API sources; isolated execution for Custom Code; no credentials, secrets, personal data, or production data committed to the repository.
 
+
 ## Scope
 ### In scope
 - Creating visual workflows by adding and connecting compatible processing nodes.
