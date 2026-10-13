@@ -1,6 +1,5 @@
 # Visual ETL Application
 
-
 ## 1. Actors and permissions
 
 | Role | Needs | Responsibility / access |
