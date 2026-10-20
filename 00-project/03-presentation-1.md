@@ -9,10 +9,18 @@ project_outline: "[[00-project/01-project-outline]]"
 
 *A visual, local-first way to build repeatable data workflows without programming.*
 
-Author: Hugo Alberto Lugo Esperilla
-Neptun: ADFUXK 
-Supervisor: Laborci Gergely
-Project ID: 2026-LG-02
+
+<!-- @set-align left -->
+<!-- @set-width 65% -->
+
+**Author:** Hugo Alberto Lugo Esperilla
+
+**Neptun:** ADFUXK
+
+**Supervisor:** Gergely Laborci
+
+**Project ID:** 2026-LG-02
+
 
 ---
 
@@ -46,6 +54,7 @@ flowchart LR
   T --> P["Preview<br/>results"]
   P --> E["Export<br/>CSV / JSON"]
 ```
+
 
 The user connects visible processing steps instead of writing a script.
 
